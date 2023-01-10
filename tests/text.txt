@@ -1,0 +1,42 @@
+*   Trying 185.104.45.36:443...
+* Connected to investments.mentorsflow.com (185.104.45.36) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: C:\xampp\apache\bin\curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: CN=investments.mentorsflow.com
+*  start date: Jan  7 08:22:22 2021 GMT
+*  expire date: Apr  7 08:22:22 2021 GMT
+*  subjectAltName: host "investments.mentorsflow.com" matched cert's "investments.mentorsflow.com"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x1abd94a9450)
+> POST /wp-admin/admin-ajax.php HTTP/2
+Host: investments.mentorsflow.com
+accept: */*
+content-length: 25
+content-type: application/x-www-form-urlencoded
+
+* We are completely uploaded and fine
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 200 
+< server: nginx
+< date: Sat, 30 Jan 2021 10:53:14 GMT
+< content-type: application/json; charset=UTF-8
+< x-robots-tag: noindex
+< x-content-type-options: nosniff
+< x-frame-options: SAMEORIGIN
+< referrer-policy: strict-origin-when-cross-origin
+< expires: Wed, 11 Jan 1984 05:00:00 GMT
+< cache-control: no-cache, must-revalidate, max-age=0, no-store
+< x-ray: p987:1.050/wn1005:1.040/wa1005:D=1043482
+< 
+* Connection #0 to host investments.mentorsflow.com left intact
